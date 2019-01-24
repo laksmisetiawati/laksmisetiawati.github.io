@@ -1,1 +1,197 @@
-Hello World
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
+        <style>
+            p {
+            	margin: 15px 0px;
+            	font-size: 14px;
+            	text-align: justify;
+            	font-family: 'Open Sans', sans-serif;
+            }
+            ol, ul {
+            	padding-left: 20px;
+            }
+            ol li, ul li {
+            	margin: 10px 0px;
+            	padding-left: 12px;
+            }
+            table p {
+            	margin: 3px 0px;
+            }
+            table td {
+                 vertical-align: top;
+            }
+            .list-sub {
+            	padding-left: 22px;
+            }
+            .margin-bottom-30 {
+            	margin-bottom: 30px;
+            }
+            .margin-bottom-60 {
+            	margin-bottom: 60px;
+            }
+            .margin-top-30 {
+            	margin-top: 30px;
+            }
+            .margin-top-40 {
+            	margin-top: 40px;
+            }
+            .clearfix {
+            	overflow: auto;
+            }
+            .clearfix::after {
+            	content: "";
+            	clear: both;
+            	display: table;
+            }
+            .heading {
+            	text-align: center;
+            	font-size: 18px;
+            	text-transform: uppercase;
+            }
+            .main-wrap {
+            	max-width: 750px;
+            	margin: auto;
+            	font-size: 14px;
+            	line-height: 20px;
+            	font-family: 'Open Sans', sans-serif;
+            	color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-wrap">
+            
+            <h2 class="heading margin-bottom-60">Surat Kuasa</h2>
+            
+            <p>Yang bertanda tangan di bawah ini:</p>
+            
+            <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+                <tr>
+                    <td style="width:15%"><p>Nama</p></td>
+                    <td style="width:85%"><p>: {{if name}}{{:name}}{{/if}}</p></td>
+                </tr>
+                <tr>
+                    <td><p>No. KTP</p></td>
+                    <td><p>: {{if personalData.identityType === "1-Kartu Tanda Penduduk (KTP)"}}{{if personalData.ktp.nik}}{{:personalData.ktp.nik}}{{/if}}{{else}}-{{/if}}</p></td>
+                </tr>
+                <tr>
+                    <td><p>Alamat</p></td>
+                    <td><p>: {{if personalData.identityAddress}}{{if personalData.identityAddress.jalan}}{{:personalData.identityAddress.jalan}}{{/if}}{{if personalData.identityAddress.province}}, <span class="crop-dash">{{:personalData.identityAddress.province}}</span>{{/if}}{{if personalData.identityAddress.kabupaten}}, <span class="crop-dash">{{:personalData.identityAddress.kabupaten}}</span>{{/if}}{{if personalData.identityAddress.kecamatan}}, <br />&nbsp;&nbsp;<span class="crop-dash">{{:personalData.identityAddress.kecamatan}}</span>{{/if}}{{if personalData.identityAddress.kelurahan}}, <span class="crop-dash">{{:personalData.identityAddress.kelurahan}}</span>{{/if}}{{if personalData.identityAddress.kodePos}}, <span class="crop-dash">{{:personalData.identityAddress.kodePos}}</span>{{/if}}{{else}}-{{/if}}</p></td>
+                </tr>
+            </table>
+            
+            <p>dalam hal ini bertindak untuk dan atas nama dirinya sendiri 
+            (selanjutnya disebut sebagai <strong>&ldquo;Pemberi Kuasa&rdquo;</strong>), 
+            dengan ini memberikan wewenang dan kuasa secara penuh kepada:</p>
+            
+            <p><strong>PT Lumbung Dana Indonesia</strong>, suatu perseroan terbatas yang didirikan berdasarkan hukum
+            negara Republik Indonesia, berkedudukan di Menara Prima Lt. 27, Jl. Dr. Ide Anak Agung Gde
+            Agung Blok 6.2 Kawasan Mega Kuningan Jakarta 12950 – Indonesia, Kota Administrasi Jakarta Selatan 
+            (<strong>&ldquo;Perseroan&rdquo;</strong>), dalam hal ini diwakili oleh:</p>
+            
+            <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+                <tr>
+                    <td style="width:15%"><p>Nama</p></td>
+                    <td style="width:85%"><p>: MDM Hidayatullah</p></td>
+                </tr>
+                <tr>
+                    <td><p>Pekerjaan</p></td>
+                    <td><p>: Direktur PT Lumbung Dana Indonesia</p></td>
+                </tr>
+                <tr>
+                    <td><p>No. KTP</p></td>
+                    <td><p>: 3174021707780010</p></td>
+                </tr>
+                <tr>
+                    <td><p>Alamat</p></td>
+                    <td><p>: Jakarta</p></td>
+                </tr>
+            </table>
+
+            <p>Bertindak selaku dan dalam jabatannya sebagaimana tersebut di atas, dari dan oleh karenanya
+            berwenang mewakili serta bertindak untuk dan atas nama Perseroan (selanjutnya disebut sebagai
+            <strong>&ldquo;Penerima Kuasa&rdquo;</strong>)</p>
+            
+            <p class="margin-bottom-30 margin-top-30">======================== KHUSUS =======================</p>
+            
+            <ol>
+                <li><p>Untuk mewakili dan bertindak untuk dan atas nama Pemberi Kuasa untuk membuat,
+                mengajukan dan menandatangani Perjanjian Kredit dengan [Penerima Pinjaman] yang
+                terdaftar pada Platform milik Penerima Kuasa dan mengadministrasikan penyediaan
+                pinjaman yang terkait.</p></li>
+                <li><p>Untuk tujuan tersebut di atas, Penerima Kuasa juga diberikan kuasa dan wewenang penuh
+                untuk, termasuk namun tidak terbatas pada:
+                    <ol style="list-style-type: lower-alpha;">
+                        <li><p>membuat dan menandatangani Perjanjian Kredit dengan Penerima Pinjaman;</p></li>
+            			<div style='page-break-before: always;'></div>
+            			{{!-- for break page --}}
+                        <li><p>memberikan kuasa substitusi atau penugasan kepada karyawan dari Penerima Kuasa
+                        sehubungan dengan teknis pelaksanaan kuasa ini;</p></li>
+                        <li><p>mentransfer dan/atau mengalihkan dana Pinjaman atas nama Pemberi Kuasa kepada
+                        Penerima Pinjaman, dan mentransfer, mengalihkan dan/atau mencairkan pengembalian
+                        Pinjaman oleh Penerima Pinjaman kepada Pemberi Kuasa – seluruhnya atas instruksi
+                        sebelumnya dari Pemberi Kuasa;</p></li>
+                        <li><p>membebankan atau memotong secara otomatis biaya jasa yang menjadi hak Penerima
+                        Kuasa atas jasa penyediaan Platform dan konsultasi bisnis kepada Pemberi Kuasa dari
+                        dana yang tersimpan di dalam Rekening Lumbung Dana sesuai Syarat dan Ketentuan
+                        Umum, Kebijakan Privasi, Perjanjian Kredit, [Perjanjian antara Pemberi Kuasa dan
+                        Penerima Kuasa] dan Syarat dan Ketentuan Pemberi Pinjaman;</p></li>
+                        <li><p>mengambil tindakan lain yang dianggap perlu untuk kepentingan Pemberi Kuasa
+                        sehubungan dengan pemberian Pinjaman kepada Penerima Pinjaman melalui Platform
+                        tersebut, termasuk namun tidak terbatas pada:
+                            <ol style="list-style-type: upper-roman;">
+                                <li><p>menghadap dan berkomunikasi dengan dan/atau kuasanya dan/atau pihak lainnya
+                                yang terkait antara lain seperti bank, Notaris, dan pihak lainnya;</p></li>
+                                <li><p>menentukan persyaratan yang diperlukan kepada Penerima Pinjaman atas nama
+                                Pemberi Kuasa;</p></li>
+                                <li><p>menyerahkan dan/atau menerima dokumen baik asli maupun salinannya dalam 
+                                bentuk <i>hardcopy</i> atau scan dari dan kepada Pemberi Kuasa, dan/atau pihak lainnya;</p></li>
+                            </ol>
+                        </p></li>
+                    </ol>
+                </p></li>
+            </ol>
+            
+            <p>Selanjutnya, bersama ini dinyatakan bahwa:</p>
+            
+            <ol>
+                <li><p>Pemberi Kuasa dengan ini menerima dan mengakui segala tindakan yang dilakukan oleh
+                Penerima Kuasa dan/atau substitusinya, sepanjang dalam melaksanakan kuasanya
+                berdasarkan Surat Kuasa ini, Penerima Kuasa tunduk pada ketentuan hukum yang berlaku.</p></li>
+                <li><p>Surat Kuasa ini diberikan dengan hak substitusi.</p></li>
+                <li><p>Istilah yang digunakan dalam Surat Kuasa ini merujuk kepada istilah yang digunakan dalam
+                Syarat dan Ketentuan Umum Penggunaan dan Syarat dan Ketentuan Pemberi Pinjaman
+                yang dimuat dalam Platform.</p></li>
+    			<div style='page-break-before: always;'></div>
+    			{{!-- for break page --}}
+                <li><p>Surat Kuasa ini ditafsirkan sesuai hukum negara Republik Indonesia.
+                Demikian Surat Kuasa ini berlaku sejak tanggal ditandatanganinya surat kuasa ini dan berakhir
+                setelah Penerima Pinjaman mengembalikan dana Pinjaman beserta bunga kepada Pemberi Kuasa
+                melalui Rekening Lumbung Dana.</p></li>
+            </ol>
+            
+            <p class="margin-top-40">Jakarta, <span id="today"></span></p>
+            
+            <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+                <tr>
+                    <td style="width:50%">
+                        <p class="margin-bottom-60">Pemberi Kuasa
+                        <br />&nbsp;</p>
+                        <p class="margin-top-40">______________________</p>
+                        <p>{{if name}}{{:name}}{{/if}}</p>
+                    </td>
+                    <td style="width:50%">
+                        <p class="margin-bottom-60">Penerima Kuasa
+                        <br />PT Lumbung Dana Indonesia</p>
+                        <p class="margin-top-40">______________________</p>
+                        <p>MDM Hidayatullah</p>
+                    </td>
+                </tr>
+            </table>
+                        
+        </div>
+
+    </body>
+</html>
