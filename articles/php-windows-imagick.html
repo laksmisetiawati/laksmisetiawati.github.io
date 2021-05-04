@@ -8,6 +8,7 @@
 
         <title>How to Install ImageMagick PHP extension in Windows | Laksmi Setiawati</title>
         
+        <meta name="robots" content="index, follow"/>
         <meta property="og:title" content="How to Install ImageMagick PHP extension in Windows" />
         <meta property="og:locale" content="id_ID" />
         <meta property="og:locale:alternate" content="in_ID" />
@@ -15,7 +16,7 @@
         <meta property="og:description" content="How to Install ImageMagick PHP extension in Windows." />
         <link rel="canonical" href="https://laksmisetiawati.github.io/articles/php-windows-imagick.html" />
         <meta property="og:url" content="https://laksmisetiawati.github.io/articles/php-windows-imagick.html" />
-        <meta property="og:site_name" content="mlocati - Michele Locati" />
+        <meta property="og:site_name" content="Laksmi Setiawati" />
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content="2021-05-04" />
         <script type="application/ld+json">
@@ -42,7 +43,6 @@
             gtag('config', 'G-THER6SFCJ0');
         </script>
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
         <link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
         <link href="../assets/css/styles.css" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" href="../assets/image/icon.png" />
@@ -51,7 +51,262 @@
     <body>
 
         <div class="container">
-            
+            <article>
+                <header>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Install ImageMagick PHP extension in Windows</h1>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Before install Imagick PHP extension, you need to check the detail of PHP configuration, PHP Version, Thread Safety, and Architecture</p>
+                        <p>You can use <code class="language-plaintext highlighter-rouge">phpinfo()</code> function.</p>
+                        <p>Take a look the picture below:</p>
+                        <p class="text-center">
+                            <img src="../assets/image/php-configuration.jpg" class="mw-100" />
+                        </p>
+                        
+                        <p>Once you get the detail of PHP configuration, you can download the .dll files of the PHP extension and ImageMagick archive using the following table:</p>
+                        
+                        <table class="table table-condensed table-hover" id="versions-table">
+                            <thead>
+                                <tr>
+                                    <th>PHP Version</th>
+                                    <th>Thread Safe</th>
+                                    <th>Architecture</th>
+                                    <th>Extension</th>
+                                    <th>ImageMagick</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>5.5</td>
+                                    <td>Yes</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.3/php_imagick-3.4.3-5.5-ts-vc11-x86.zip">php_imagick-3.4.3-5.5-ts-vc11-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc11-x86.zip">ImageMagick-6.9.3-7-vc11-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5.5</td>
+                                    <td>Yes</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.3/php_imagick-3.4.3-5.5-ts-vc11-x64.zip">php_imagick-3.4.3-5.5-ts-vc11-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc11-x64.zip">ImageMagick-6.9.3-7-vc11-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5.5</td>
+                                    <td>No</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.3/php_imagick-3.4.3-5.5-nts-vc11-x86.zip">php_imagick-3.4.3-5.5-nts-vc11-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc11-x86.zip">ImageMagick-6.9.3-7-vc11-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5.5</td>
+                                    <td>No</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.3/php_imagick-3.4.3-5.5-nts-vc11-x64.zip">php_imagick-3.4.3-5.5-nts-vc11-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc11-x64.zip">ImageMagick-6.9.3-7-vc11-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5.6</td>
+                                    <td>Yes</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.3/php_imagick-3.4.3-5.6-ts-vc11-x86.zip">php_imagick-3.4.3-5.6-ts-vc11-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc11-x86.zip">ImageMagick-6.9.3-7-vc11-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5.6</td>
+                                    <td>Yes</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.3/php_imagick-3.4.3-5.6-ts-vc11-x64.zip">php_imagick-3.4.3-5.6-ts-vc11-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc11-x64.zip">ImageMagick-6.9.3-7-vc11-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5.6</td>
+                                    <td>No</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.3/php_imagick-3.4.3-5.6-nts-vc11-x86.zip">php_imagick-3.4.3-5.6-nts-vc11-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc11-x86.zip">ImageMagick-6.9.3-7-vc11-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5.6</td>
+                                    <td>No</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.3/php_imagick-3.4.3-5.6-nts-vc11-x64.zip">php_imagick-3.4.3-5.6-nts-vc11-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc11-x64.zip">ImageMagick-6.9.3-7-vc11-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.0</td>
+                                    <td>Yes</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.3/php_imagick-3.4.3-7.0-ts-vc14-x86.zip">php_imagick-3.4.3-7.0-ts-vc14-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc14-x86.zip">ImageMagick-6.9.3-7-vc14-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.0</td>
+                                    <td>Yes</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.3/php_imagick-3.4.3-7.0-ts-vc14-x64.zip">php_imagick-3.4.3-7.0-ts-vc14-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc14-x64.zip">ImageMagick-6.9.3-7-vc14-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.0</td>
+                                    <td>No</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.3/php_imagick-3.4.3-7.0-nts-vc14-x86.zip">php_imagick-3.4.3-7.0-nts-vc14-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc14-x86.zip">ImageMagick-6.9.3-7-vc14-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.0</td>
+                                    <td>No</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.3/php_imagick-3.4.3-7.0-nts-vc14-x64.zip">php_imagick-3.4.3-7.0-nts-vc14-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc14-x64.zip">ImageMagick-6.9.3-7-vc14-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.1</td>
+                                    <td>Yes</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.1-ts-vc14-x86.zip">php_imagick-3.4.4-7.1-ts-vc14-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc14-x86.zip">ImageMagick-6.9.3-7-vc14-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.1</td>
+                                    <td>Yes</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.1-ts-vc14-x64.zip">php_imagick-3.4.4-7.1-ts-vc14-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc14-x64.zip">ImageMagick-6.9.3-7-vc14-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.1</td>
+                                    <td>No</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.1-nts-vc14-x86.zip">php_imagick-3.4.4-7.1-nts-vc14-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc14-x86.zip">ImageMagick-6.9.3-7-vc14-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.1</td>
+                                    <td>No</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.1-nts-vc14-x64.zip">php_imagick-3.4.4-7.1-nts-vc14-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-6.9.3-7-vc14-x64.zip">ImageMagick-6.9.3-7-vc14-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.2</td>
+                                    <td>Yes</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.2-ts-vc15-x86.zip">php_imagick-3.4.4-7.2-ts-vc15-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x86.zip">ImageMagick-7.0.7-11-vc15-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.2</td>
+                                    <td>Yes</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.2-ts-vc15-x64.zip">php_imagick-3.4.4-7.2-ts-vc15-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x64.zip">ImageMagick-7.0.7-11-vc15-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.2</td>
+                                    <td>No</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.2-nts-vc15-x86.zip">php_imagick-3.4.4-7.2-nts-vc15-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x86.zip">ImageMagick-7.0.7-11-vc15-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.2</td>
+                                    <td>No</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.2-nts-vc15-x64.zip">php_imagick-3.4.4-7.2-nts-vc15-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x64.zip">ImageMagick-7.0.7-11-vc15-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.3</td>
+                                    <td>Yes</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.3-ts-vc15-x86.zip">php_imagick-3.4.4-7.3-ts-vc15-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x86.zip">ImageMagick-7.0.7-11-vc15-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.3</td>
+                                    <td>Yes</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.3-ts-vc15-x64.zip">php_imagick-3.4.4-7.3-ts-vc15-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x64.zip">ImageMagick-7.0.7-11-vc15-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.3</td>
+                                    <td>No</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.3-nts-vc15-x86.zip">php_imagick-3.4.4-7.3-nts-vc15-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x86.zip">ImageMagick-7.0.7-11-vc15-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.3</td>
+                                    <td>No</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.3-nts-vc15-x64.zip">php_imagick-3.4.4-7.3-nts-vc15-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x64.zip">ImageMagick-7.0.7-11-vc15-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.4</td>
+                                    <td>Yes</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.4-ts-vc15-x86.zip">php_imagick-3.4.4-7.4-ts-vc15-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x86.zip">ImageMagick-7.0.7-11-vc15-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.4</td>
+                                    <td>Yes</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.4-ts-vc15-x64.zip">php_imagick-3.4.4-7.4-ts-vc15-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x64.zip">ImageMagick-7.0.7-11-vc15-x64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.4</td>
+                                    <td>No</td>
+                                    <td>x86</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.4-nts-vc15-x86.zip">php_imagick-3.4.4-7.4-nts-vc15-x86.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x86.zip">ImageMagick-7.0.7-11-vc15-x86.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7.4</td>
+                                    <td>No</td>
+                                    <td>x64</td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/releases/imagick/3.4.4/php_imagick-3.4.4-7.4-nts-vc15-x64.zip">php_imagick-3.4.4-7.4-nts-vc15-x64.zip</a></td>
+                                    <td><a href="http://windows.php.net/downloads/pecl/deps/ImageMagick-7.0.7-11-vc15-x64.zip">ImageMagick-7.0.7-11-vc15-x64.zip</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>After download the right archive, follow below steps to installing process :</p>
+                        <ol>
+                            <li>
+                                Extract <code class="language-plaintext highlighter-rouge">ImageMagick-(any).zip</code>. 
+                                Copy .dll files located in <code class="language-plaintext highlighter-rouge">bin</code>. 
+                                Application extention file name start with <code class="language-plaintext highlighter-rouge">CORE_RL</code> and <code class="language-plaintext highlighter-rouge">IM_MOD_RL</code>. 
+                                Paste them in PHP root directory where you have <code class="language-plaintext highlighter-rouge">php.exe</code>.
+                            </li>
+                            
+                            <li>
+                                Extract <code class="language-plaintext highlighter-rouge">php_imagick-(any).zip</code>. 
+                                Copy <code class="language-plaintext highlighter-rouge">php_imagick.dll</code> files located in <code class="language-plaintext highlighter-rouge">bin</code> 
+                                and paste it in <code class="language-plaintext highlighter-rouge">ext</code> folder in PHP directory.
+                            </li>
+
+                            <li>
+                                Open <code class="language-plaintext highlighter-rouge">php.ini</code> file located in PHP root directory. 
+                                Add <code class="language-plaintext highlighter-rouge">extension=php_imagick.dll</code> in php.ini
+                            </li>
+
+                            <li>Restart the Apache</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
         </div>
 
     </body>
