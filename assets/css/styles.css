@@ -2,3 +2,17 @@ html, body {
   padding: 0px;
   margin: 0px
 }
+p {
+  margin: 15px 0px;
+  font-size: 14px;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+}
+.main-wrap {
+  max-width: 750px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
