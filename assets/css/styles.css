@@ -17,3 +17,13 @@ p {
   font-family: 'Open Sans', sans-serif;
   color: #000;
 }
+.main-wrap.index-page,
+.main-wrap.index-page p {
+  text-align: center;
+}
+.index-page a {
+  color: rgb(65, 105, 225);
+}
+.index-page a:hover {
+  color: rgb(138, 43, 226);
+}
