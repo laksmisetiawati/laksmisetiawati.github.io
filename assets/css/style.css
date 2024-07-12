@@ -529,7 +529,7 @@ section {
 
 .section-title h4 {
   font-size: 23px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .section-title p {
@@ -546,10 +546,10 @@ section {
 
 .about .container {
   box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+  padding-left: 0px;
 }
 
 .about .video-box img {
-  padding: 100px 0;
   max-width: 100%;
   height: auto;
 }
@@ -571,7 +571,7 @@ section {
 }
 
 .about .about-content {
-  padding: 40px;
+  padding: 35px 40px;
 }
 
 .about .icon-box + .icon-box {
@@ -1087,6 +1087,20 @@ section {
   .team .member {
     margin-bottom: 100px;
   }
+}
+
+.portfolio-detail  {
+  margin-top: 20px;
+}
+
+.portfolio-detail > div {
+  margin-bottom: 60px;
+}
+
+.portfolio-detail h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------
