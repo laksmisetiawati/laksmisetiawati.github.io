@@ -26,6 +26,16 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Raleway", sans-serif;
 }
 
+.main-wrap {
+  max-width: 750px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
