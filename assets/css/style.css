@@ -894,7 +894,11 @@ section {
 # Our Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .portfolio #portfolio-flters {
