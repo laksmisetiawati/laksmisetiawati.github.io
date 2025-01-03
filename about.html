@@ -259,54 +259,27 @@
 
   
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
+  <style>
+      .text {
+          width: 400px;
+          min-height: 100px;
+      }
+  </style>
 
-        <div class="section-title">
-          <h2>Connect With Me!</h2>
-        </div>
+  <object class="text" data="https://laksmisetiawati.github.io/template/footer.html" type="text/html"></object>
 
-        <div class="row">
-          <div class="col-lg-12 col-md-12 footer-info">
-            <div class="social-links">
-              <a target="_blank" href="mailto:laksmise@gmail.com" class="twitter" title="Email Me">
-                <i class="bx bx-mail-send"></i>
-              </a>
-              <a target="_blank" href="https://www.linkedin.com/in/laksmi-setiawati/" class="linkedin" title="My Linkedin">
-                <i class="bx bxl-linkedin"></i>
-              </a>
-              <a target="_blank" href="https://medium.com/@laksmise" class="medium" title="My Blog">
-                <i class="bx bxl-medium"></i>
-              </a>
-              <a target="_blank" href="https://github.com/laksmisetiawati" class="github" title="My Github">
-                <i class="bx bxl-github"></i>
-              </a>
-              <a target="_blank" href="https://github.com/ryuamy?tab=repositories" class="facebook" title="3rd Party Package">
-                <i class="bx bx-git-repo-forked"></i>
-              </a>
-              <a target="_blank" href="https://public.tableau.com/app/profile/laksmi.setiawati/vizzes" class="facebook" title="Tableau Vizzes">
-                <i class="bx bx-chart"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <script>
+      window.onload = function () {
+          var object = document.querySelector('.text');
+          var doc = object.contentDocument;
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Laksmi Setiawati</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
-        Designed by <a href="https://themewagon.github.io/mamba/">Mamba BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+          doc.documentElement.style.overflow = 'hidden';
+          doc.body.style.overflow = 'hidden';
+
+          var contentsHeight = doc.documentElement.offsetHeight;
+          object.height = contentsHeight;
+      }
+  </script><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
