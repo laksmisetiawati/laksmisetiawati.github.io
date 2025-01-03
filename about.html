@@ -259,18 +259,14 @@
 
   
   <!-- ======= Footer ======= -->
-  <style>
-      .text {
-          width: 400px;
-          min-height: 100px;
-      }
-  </style>
+  <object class="object-footer" data="https://laksmisetiawati.github.io/template/footer.html" type="text/html"></object>
+  <!-- End Footer -->
 
-  <object class="text" data="https://laksmisetiawati.github.io/template/footer.html" type="text/html"></object>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <script>
       window.onload = function () {
-          var object = document.querySelector('.text');
+          var object = document.querySelector('.object-footer');
           var doc = object.contentDocument;
 
           doc.documentElement.style.overflow = 'hidden';
@@ -279,9 +275,7 @@
           var contentsHeight = doc.documentElement.offsetHeight;
           object.height = contentsHeight;
       }
-  </script><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="https://laksmisetiawati.github.io/assets/vendor/jquery/jquery.min.js"></script>

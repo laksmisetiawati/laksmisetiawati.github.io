@@ -1459,3 +1459,8 @@ section {
 #footer .credits a {
   color: #9eccf4;
 }
+
+.object-footer {
+  width: 100%;
+  min-height: 100px;
+}
