@@ -1470,6 +1470,15 @@ section {
   min-height: 100px;
 }
 
+.iframe-header {
+  width: 100%;
+  height: auto;
+  min-height: 200px; /* aman untuk footer */
+  border: none;
+  overflow: hidden;
+  display: block;
+}
+
 .iframe-footer {
   width: 100%;
   height: auto;
@@ -1478,3 +1487,4 @@ section {
   overflow: hidden;
   display: block;
 }
+
