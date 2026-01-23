@@ -1307,6 +1307,11 @@ section {
   font-size: 14px;
 }
 
+#footer .container {
+  max-width: 100% !important;
+  width: 100%;
+}
+
 #footer .section-title h2 {
   color: #ffffff;
 }
@@ -1463,4 +1468,13 @@ section {
 .object-footer {
   width: 100%;
   min-height: 100px;
+}
+
+.iframe-footer {
+  width: 100%;
+  height: auto;
+  min-height: 200px; /* aman untuk footer */
+  border: none;
+  overflow: hidden;
+  display: block;
 }
