@@ -1470,7 +1470,7 @@ section {
   min-height: 100px;
 }
 
-.iframe-header {
+.iframe-footer {
   width: 100%;
   height: auto;
   min-height: 200px; /* aman untuk footer */
