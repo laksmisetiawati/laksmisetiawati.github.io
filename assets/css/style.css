@@ -1481,8 +1481,8 @@ section {
 
 .iframe-cv {
   width: 100%;
-  height: auto;
-  min-height: 200px; /* aman untuk footer */
+  /* height: auto; */
+  /* min-height: 200px; */
   border: none;
   overflow: hidden;
   display: block;
