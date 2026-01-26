@@ -1473,7 +1473,7 @@ section {
 .iframe-footer {
   width: 100%;
   height: auto;
-  min-height: 200px; /* aman untuk footer */
+  min-height: 285px; /* aman untuk footer */
   border: none;
   overflow: hidden;
   display: block;
